@@ -12,7 +12,7 @@ export default function fetchCountries (searchQuery) {
         if (countries.length > 10) {
                return notifyError();
         };
-        if (countries.length > 2 && countries.length < 10) {
+        if (countries.length > 1 && countries.length < 10) {
                 return renderCountries(countries);
         };
         renderOneCountry (countries);
